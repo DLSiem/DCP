@@ -42,11 +42,11 @@ def sort_array(arr):
     high = len(arr) - 1
 
     while mid <= high:
-        if mid == 0:
+        if arr[mid] == 0:
             arr[low], arr[mid] = arr[mid], arr[low]
             low += 1
             mid += 1
-        elif mid == 1:
+        elif arr[mid] == 1:
             mid += 1
         else:
             arr[mid], arr[high] = arr[high], arr[mid]
@@ -61,3 +61,9 @@ print(sort_array([2, 1, 0, 2, 1, 0]))  # [0, 0, 1, 1, 2, 2]
 print(sort_array([2, 1, 0, 0, 1, 2]))  # [0, 0, 1, 1, 2, 2]
 print(sort_array([2, 1, 0, 0, 1, 2]))  # [0, 0, 1, 1, 2, 2]
 print(sort_array([0, 1, 2, 0, 1, 2]))  # [0, 0, 1, 1, 2, 2]
+
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
+ 
