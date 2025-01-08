@@ -58,7 +58,7 @@ def n_queen(n):
 
 
 
-n = 10
+n = 4
 if len(n_queen(n)) == 0:
     print(f"No solution exis for n = {n}.")
 else:
